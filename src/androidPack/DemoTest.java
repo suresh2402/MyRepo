@@ -17,8 +17,7 @@ public class DemoTest {
 		capabilities.setCapability("platformName", "Android");	// mandatory	
 		capabilities.setCapability("platformVersion", "6.0.1");
 		capabilities.setCapability("appActivity", "com.android.calendar.AllInOneActivity");
-	    capabilities.setCapability("appPackage", "com.underwood.calendar_beta");
-	    
+	    capabilities.setCapability("appPackage", "com.underwood.calendar_beta");	    
 	    URL url= new URL("http://127.0.0.1:4723/wd/hub");
 	    WebDriver driver = new AndroidDriver(url, capabilities);
 		driver.get("https://the-internet.herokuapp.com/login");
