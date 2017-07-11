@@ -20,6 +20,7 @@ public class DemoTest {
 	    @SuppressWarnings("rawtypes")
 		WebDriver driver = new AndroidDriver(url, capabilities);
 		driver.get("https://the-internet.herokuapp.com/login");
+		System.out.println("csacsacasc");
 		System.out.println("Title "+driver.getTitle());
 		driver.findElement(By.name("username")).sendKeys("tomsmith");
 		driver.findElement(By.name("password")).sendKeys("SuperSecretPassword!");
