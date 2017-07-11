@@ -5,13 +5,8 @@ import java.net.URL;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
-<<<<<<< HEAD
 import io.appium.java_client.android.AndroidDriver;
 
-=======
->>>>>>> ebae91b... first add
 public class DemoTest {
 
 	public static void main(String[] args) throws MalformedURLException, InterruptedException {
@@ -20,17 +15,9 @@ public class DemoTest {
 		capabilities.setCapability("platformName", "Android");	// mandatory	
 		capabilities.setCapability("platformVersion", "6.0.1");
 		capabilities.setCapability("appActivity", "com.android.calendar.AllInOneActivity");
-<<<<<<< HEAD
 	    capabilities.setCapability("appPackage", "com.underwood.calendar_beta");	    
 	    URL url= new URL("http://127.0.0.1:4723/wd/hub");
 	    WebDriver driver = new AndroidDriver(url, capabilities);
-=======
-	    capabilities.setCapability("appPackage", "com.underwood.calendar_beta");
-	    
-	    URL url= new URL("http://127.0.0.1:4723/wd/hub");
-	    WebDriver driver = new RemoteWebDriver(url, capabilities);
-		//WebDriver driver = new AndroidDriver(url, capabilities);
->>>>>>> ebae91b... first add
 		driver.get("https://the-internet.herokuapp.com/login");
 		System.out.println("Title "+driver.getTitle());
 		driver.findElement(By.name("username")).sendKeys("tomsmith");
