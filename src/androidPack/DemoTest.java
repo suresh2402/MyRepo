@@ -19,7 +19,6 @@ public class DemoTest {
 	    URL url= new URL("http://127.0.0.1:4723/wd/hub");
 	    @SuppressWarnings("rawtypes")
 		WebDriver driver = new AndroidDriver(url, capabilities);
-	    System.out.println("hi");
 		driver.get("https://the-internet.herokuapp.com/login");
 		System.out.println("Title "+driver.getTitle());
 		driver.findElement(By.name("username")).sendKeys("tomsmith");
