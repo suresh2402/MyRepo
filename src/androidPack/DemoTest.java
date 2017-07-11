@@ -17,7 +17,8 @@ public class DemoTest {
 		capabilities.setCapability("appActivity", "com.android.calendar.AllInOneActivity");
 	    capabilities.setCapability("appPackage", "com.underwood.calendar_beta");	    
 	    URL url= new URL("http://127.0.0.1:4723/wd/hub");
-	    WebDriver driver = new AndroidDriver(url, capabilities);
+	    @SuppressWarnings("rawtypes")
+		WebDriver driver = new AndroidDriver(url, capabilities);
 		driver.get("https://the-internet.herokuapp.com/login");
 		System.out.println("Title "+driver.getTitle());
 		driver.findElement(By.name("username")).sendKeys("tomsmith");
